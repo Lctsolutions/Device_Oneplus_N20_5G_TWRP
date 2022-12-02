@@ -40,6 +40,10 @@ firmware_directories /odm/etc/wifi/ /mnt/vendor/persist/ /vendor/firmware_mnt/im
 /dev/midas_dev            0660   system     system
 #endif
 
+#ifdef CONFIG_OPLUS_FEATURE_BINDER_STATS_ENABLE
+/dev/binder_stats         0660   system     system
+#endif
+
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
 /dev/mhi_*_pipe_4         0660   system     system
